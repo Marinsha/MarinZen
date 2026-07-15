@@ -1,0 +1,50 @@
+services:
+
+  api-gateway:
+    build: ./services/api-gateway
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./services/api-gateway:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    depends_on:
+      - task-service
+
+  auth-service:
+    build: ./services/auth-service
+    ports:
+      - "8003:8000"
+    volumes:
+      - ./services/auth-service:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  quiz-service:
+    build: ./services/quiz-service
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./services/quiz-service:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  result-service:
+    build: ./services/result-service
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./services/result-service:/app
+    env_file:
+      - ./services/result-service/.env
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  task-service:
+    build: ./services/task-service
+    ports:
+      - "8004:8000"
+    volumes:
+      - ./services/task-service:/app
+      - /app/node_modules
+    env_file:
+      - ./services/task-service/.env
+    environment:
+      - NODE_ENV=development
+    command: npm run dev

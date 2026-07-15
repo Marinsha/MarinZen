@@ -1,0 +1,66 @@
+# MarinZen (Dosha-App) Project Overview
+
+## 1. Project Summary
+MarinZen is a focused Ayurvedic wellness application designed to help users discover their body constitution (Dosha). This version has been stripped down to its core onboarding and assessment flow to provide a clean foundation for future development.
+
+## 2. Technology Stack
+- **Frontend**: React 19, Vite, Tailwind CSS v4, i18next (Bilingual support: English/Tamil).
+- **Backend**: FastAPI (Python 3.11), Uvicorn.
+- **Database**: PostgreSQL (with SQLAlchemy ORM).
+- **Orchestration**: Docker & Docker Compose.
+
+## 3. Architecture
+The project follows a microservices pattern with an API Gateway acting as the central entry point.
+
+- **Frontend (Port 5173)**: React application.
+- **API Gateway (Port 8000)**: Routes requests to internal services.
+- **Auth Service (Port 8003)**: Handles JWT authentication and user management.
+- **Quiz Service (Port 8001)**: Manages the assessment questions and logic.
+
+## 4. Directory Structure
+```text
+f:\prakriti-dosha
+├── docker-compose.yml       # Orchestrates all services
+├── README.md                # Project documentation
+├── project_info.txt         # This file
+├── frontend/                # React Vite application
+│   ├── src/                 # Source code (App.jsx, components, pages, etc.)
+│   ├── package.json         # Frontend dependencies
+│   └── .env                 # Frontend environment variables
+└── services/                # Backend microservices
+    ├── api-gateway/         # Routing and Proxy logic
+    ├── auth-service/        # Authentication logic
+    └── quiz-service/        # Assessment/Quiz logic
+```
+
+## 5. Key Components & Logic
+
+### Core Onboarding Flow
+1. **Intro Page (`/`)**: High-level overview of MarinZen and Doshas.
+2. **Auth Page (`/auth`)**: User registration and login.
+3. **Discover Page (`/discover`)**: Choice between taking the quiz or manual Dosha selection.
+4. **Quiz Module (`/quiz`)**: 21-question assessment to identify Prakriti.
+5. **Results Page (`/quiz` result state)**: Displays identifying Dosha and basic characteristics.
+
+### Backend Services (Python/FastAPI)
+- **API Gateway**: Proxies requests to internal microservices.
+- **Auth Service**: Manages user profiles and authentication tokens.
+- **Quiz Service**: Serves bilingual assessment questions.
+
+## 6. Environment Configuration
+Required variables in `.env` files:
+- `DATABASE_URL`: Connection string for PostgreSQL.
+- `SECRET_KEY`: For JWT signing.
+
+## 7. How to Run
+1. **Docker**: Run `docker compose up --build -d` from the root.
+2. **Frontend**: Run `npm install` and `npm run dev` inside the `frontend` directory.
+
+## 8. Main Entry Points
+- **API Gateway**: `services/api-gateway/app/main.py`
+- **Auth Service**: `services/auth-service/app/main.py`
+- **Quiz Service**: `services/quiz-service/app/main.py`
+- **Frontend App**: `frontend/src/App.jsx`
+
+## 9. Development Status
+This codebase is currently in a "Clean Slate" state. All dashboard-related features (Tasks, Community, Streaks, etc.) have been removed to allow for a fresh redesign of the post-assessment experience.

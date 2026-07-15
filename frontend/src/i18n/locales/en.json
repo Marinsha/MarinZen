@@ -1,0 +1,265 @@
+{
+  "doshas": {
+    "vata": "Vata",
+    "pitta": "Pitta",
+    "kapha": "Kapha"
+  },
+  "quiz": {
+    "intro": {
+      "badge": "Ayurvedic Assessment",
+      "title_discover": "Discover Your ",
+      "title_prakriti": "Prakriti",
+      "subtitle_p1": "Uncover your unique mind-body constitution rooted in the ancient wisdom of ",
+      "subtitle_p2": "Ayurveda",
+      "meta": "21 questions  ·  ~5 minutes  ·  Free & personalized",
+      "cta": "Begin Your Journey"
+    }
+  },
+  "intro": {
+    "title": "MarinZen",
+    "tagline": "Personalized Ayurvedic Wellness",
+    "description": "MarinZen helps you discover your Ayurvedic body constitution (Prakriti) and provides personalized guidance for diet, lifestyle, yoga, skincare, and daily wellness routines. Based on your unique Dosha, MarinZen creates a balanced path toward better health.",
+    "cta": "Get Started",
+    "features": {
+      "discovery": {
+        "title": "Discover Your Dosha",
+        "description": "Understand your natural body constitution."
+      },
+      "customization": {
+        "title": "Personalized Wellness",
+        "description": "Get diet, yoga, and lifestyle guidance."
+      },
+      "holistic": {
+        "title": "Holistic Balance",
+        "description": "Improve physical and mental wellbeing."
+      }
+    }
+  },
+  "auth": {
+    "back": "Back",
+    "welcome": "Welcome to MarinZen",
+    "subtitle": "Access your personalized wellness journey.",
+    "tabs": {
+      "login": "Login",
+      "signup": "Sign Up"
+    },
+    "login": {
+      "email_label": "Email Address",
+      "email_placeholder": "marinsha@gmail.com",
+      "password_label": "Password",
+      "password_placeholder": "Enter your password",
+      "forgot_password": "Forgot password?",
+      "sign_in": "Sign In",
+      "logging_in": "Logging in...",
+      "errors": {
+        "email_req": "Email is required",
+        "email_inv": "Email format is invalid",
+        "password_req": "Password is required",
+        "failed": "Login failed",
+        "network": "A network error occurred. Please try again."
+      }
+    },
+    "signup": {
+      "name_label": "Full Name",
+      "name_placeholder": "Marinsha",
+      "email_label": "Email Address",
+      "email_placeholder": "marinsha@gmail.com",
+      "password_label": "Password",
+      "password_placeholder": "Create a password",
+      "confirm_label": "Confirm Password",
+      "confirm_placeholder": "Confirm your password",
+      "sign_up": "Sign Up",
+      "signing_up": "Signing up...",
+      "errors": {
+        "name_req": "Full Name is required",
+        "email_req": "Email is required",
+        "email_inv": "Email format is invalid",
+        "password_req": "Password is required",
+        "password_len": "Password must be at least 6 characters",
+        "confirm_req": "Confirm Password is required",
+        "confirm_match": "Passwords do not match",
+        "failed": "Signup failed",
+        "success_login": "Signup successful! Please sign in to continue.",
+        "network": "A network error occurred. Please try again."
+      }
+    }
+  },
+  "discover": {
+    "back": "Back",
+    "loading": "Loading questions...",
+    "error_loading": "Failed to load questions. Please try again.",
+    "title": "Discover Your Prakriti",
+    "subtitle": "Answer a few questions to find out your dominant Dosha and receive personalized wellness recommendations.",
+    "main_title": "Discover Your Wellness Path",
+    "main_subtitle": "Choose how you want to begin your personalized Ayurvedic journey.",
+    "opt1_title": "Take the Prakriti Quiz",
+    "opt1_desc": "Answer a few guided questions to identify your Ayurvedic body constitution.",
+    "opt2_title": "I Already Know My Dosha",
+    "opt2_desc": "Select your dosha directly and continue to your personalized results.",
+    "start_quiz": "Start Quiz",
+    "select_dosha": "Select Dosha Manually",
+    "btn_next": "Next",
+    "btn_finish": "See Results",
+    "select_title": "Select Your Profile",
+    "select_subtitle": "Choose your dominant dosha or dual-dosha to begin.",
+    "dosha_vata": "Vata",
+    "dosha_pitta": "Pitta",
+    "dosha_kapha": "Kapha",
+    "dosha_vata_pitta": "Vata+Pitta",
+    "dosha_pitta_kapha": "Pitta+Kapha",
+    "dosha_vata_kapha": "Vata+Kapha",
+    "quiz": {
+      "question_label": "Question",
+      "which_best": "Which best describes your",
+      "previous": "Previous",
+      "next_question": "Next Question",
+      "see_result": "See My Result",
+      "loading": "Loading questions...",
+      "element_vata": "Air & Space",
+      "element_pitta": "Fire & Water",
+      "element_kapha": "Earth & Water",
+      "quality_vata_0": "Creative",
+      "quality_vata_1": "Quick-minded",
+      "quality_vata_2": "Enthusiastic",
+      "quality_vata_3": "Variable",
+      "quality_pitta_0": "Driven",
+      "quality_pitta_1": "Focused",
+      "quality_pitta_2": "Intense",
+      "quality_pitta_3": "Transformative",
+      "quality_kapha_0": "Calm",
+      "quality_kapha_1": "Stable",
+      "quality_kapha_2": "Nurturing",
+      "quality_kapha_3": "Enduring"
+    },
+    "result": {
+      "title": "Your Dosha Result",
+      "loading": "Saving results...",
+      "dominant": "Your dominant dosha is",
+      "vata": "Vata",
+      "pitta": "Pitta",
+      "kapha": "Kapha",
+      "go_dashboard": "Go to Dashboard",
+      "desc_vata": "Vata is associated with movement, lightness, creativity, and variability.",
+      "desc_pitta": "Pitta is associated with heat, sharpness, intensity, and transformation.",
+      "desc_kapha": "Kapha is associated with stability, strength, calmness, and endurance.",
+      "identified": "Constitution Identified",
+      "element": "Element",
+      "retake": "Retake quiz",
+      "enter_dashboard": "Go to Dashboard"
+    }
+  },
+  "quiz_back": "Back",
+  "dashboard": {
+    "active_routine": "Active Routine",
+    "ready_ritual": "Ready for your Ritual?",
+    "generate_ritual_desc": "Generate today's personalized Ayurvedic actions.",
+    "start_checkin": "Start Check-in",
+    "daily_ritual_title": "Your Daily Ritual",
+    "progress": "Progress",
+    "welcome_back": "Welcome back,",
+    "ritual_tracker": "Ritual Tracker",
+    "logout": "Logout",
+    "constitution_proportions": "Constitution Proportions",
+    "constitution_proportions_desc": "Ayurveda classifies your unique mind-body bio-elements. Discover your specific balance of Vata (Air), Pitta (Fire), and Kapha (Earth).",
+    "categories": {
+      "diet": "Diet",
+      "yoga": "Yoga",
+      "routine": "Routine",
+      "ayurvedic_guide": "Ayurvedic Guide"
+    },
+    "features": {
+      "diet": {
+        "title": "Diet",
+        "quote": "Nourish your inner fire",
+        "p1": "Warm Rice",
+        "p2": "Ginger Tea",
+        "p3": "Fresh Fruit"
+      },
+      "yoga": {
+        "title": "Yoga",
+        "quote": "Harmonize body and soul",
+        "p1": "Morning Flow",
+        "p2": "Deep Breath",
+        "p3": "Sun Salutation"
+      },
+      "routine": {
+        "title": "Routine",
+        "quote": "The rhythm of wellness",
+        "p1": "Early Sleep",
+        "p2": "Oil Massage",
+        "p3": "Morning Ritual"
+      },
+      "guide": {
+        "title": "Ayurvedic Guide",
+        "quote": "Ancient wisdom, modern life",
+        "p1": "Herbal Care",
+        "p2": "Dosha Balance",
+        "p3": "Self Love"
+      }
+    },
+    "checkin": {
+      "title": "Daily Check-in",
+      "curating": "Curating Path...",
+      "aligning": "Aligning your Ayurvedic rituals",
+      "sleep": {
+        "question": "How was your sleep?",
+        "good": "Good",
+        "average": "Average",
+        "poor": "Poor"
+      },
+      "stress": {
+        "question": "Stress level?",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      },
+      "energy": {
+        "question": "Energy level?",
+        "high": "High",
+        "normal": "Normal",
+        "low": "Low"
+      },
+      "body": {
+        "question": "Body feel?",
+        "light": "Light",
+        "heavy": "Heavy",
+        "uneasy": "Uneasy"
+      }
+    },
+    "calendar": {
+      "title": "Calendar",
+      "tracked_rituals": "Tracked Rituals",
+      "no_rituals": "No tracked rituals",
+      "no_rituals_desc": "Complete check-in to build history!",
+      "ritual": "Ritual",
+      "completed": "completed",
+      "skipped": "skipped",
+      "pending": "pending"
+    },
+    "explore": "Explore",
+    "reset_confirm": "Reset today's routine checklist and start fresh?",
+    "reset_button": "Reset Daily Routine"
+  },
+  "recommendations": {
+    "retry": "Retry Session",
+    "wisdom_guidelines": "Wisdom Guidelines",
+    "back_to_dashboard": "Dashboard",
+    "profile_title": "MarinZen Profile",
+    "diet": {
+      "tip_title": "Agni Check",
+      "tip_detail": "Eat only when truly hungry for optimal digestion."
+    },
+    "yoga": {
+      "tip_title": "Best Time",
+      "tip_detail": "Brahma Muhurta (4:00 AM - 6:00 AM) for spiritual growth."
+    },
+    "routine": {
+      "tip_title": "Daily Ritual",
+      "tip_detail": "Tongue scraping removes toxins (Ama) from the body."
+    },
+    "guide": {
+      "tip_title": "Holistic Tip",
+      "tip_detail": "Self-Abhyanga (oil massage) calms the nervous system."
+    }
+  }
+}
